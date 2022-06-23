@@ -1,3 +1,11 @@
+import MainSection from './components/MainSection/MainSection'
+// import AboutMe from './components/AboutMe'
+// import MySkills from './components/MySkills'
+import SideBar from './components/SideBar/SideBarDesktop'
+import SideBarMobile from './components/SideBar/SideBarMobile'
+
+import './App.scss'
+
 /**
  * App - the main application react element
  *
@@ -6,9 +14,13 @@
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<p>Personal Protafolio</p>
-			</header>
+			<SideBar />
+			<div className="container">
+				<SideBarMobile />
+				<MainSection />
+				{/* <AboutMe />
+				<MySkills /> */}
+			</div>
 		</div>
 	)
 }

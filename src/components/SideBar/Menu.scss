@@ -1,0 +1,90 @@
+@import '../../assets/styles/media.scss';
+
+.menu {
+	height: 100%;
+	transition: visibility 0s 0s, z-index 0s 0s;
+	z-index: 100;
+	opacity: 1;
+	background-color: #1d1d1d;
+
+	.header {
+		background: #000000;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem 0;
+		color: #fff;
+
+		.close-icon {
+			cursor: pointer;
+			position: fixed;
+			top: 10px;
+			right: 20px;
+			width: 2rem;
+			height: 2rem;
+			z-index: 100;
+			svg {
+				height: fit-content;
+			}
+		}
+
+		.description {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-family: 'Roboto';
+			h2 {
+				margin: 10px auto;
+			}
+			p {
+				font-size: 16px !important;
+				color: #a5a5a5;
+			}
+		}
+	}
+	div.list-nav {
+		height: calc(100% - 250px);
+		display: flex;
+		ul {
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			height: fit-content;
+			margin: auto;
+
+			li {
+				cursor: pointer;
+				box-sizing: border-box;
+				text-align: center;
+				width: 100%;
+				display: block;
+				font-size: 16px;
+				color: #909096;
+				line-height: 5rem;
+				border-top: 1px solid #282828;
+				border-bottom: 1px solid #282828;
+				transition: color 0.3s, background-color 0.3s;
+				font-family: 'Roboto';
+				margin: 0px;
+				&:hover {
+					color: #08fdd8;
+				}
+			}
+		}
+	}
+	.menu-botton-wrapper {
+		width: 100%;
+		position: relative;
+
+		.menu-botton {
+			position: relative !important;
+			width: fit-content;
+			margin: auto;
+			margin-top: -20px;
+			bottom: 0 !important;
+			right: 0 !important;
+		}
+	}
+}

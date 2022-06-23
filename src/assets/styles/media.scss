@@ -1,0 +1,9 @@
+$extra-small-min-val: 22em;
+$small-min-val: 48em;
+$medium-min-val: 62em;
+$large-min-val: 75em;
+
+$extra-small: 'only screen and (min-width: #{$extra-small-min-val})';
+$small: 'only screen and (min-width: #{$small-min-val})';
+$medium: 'only screen and (min-width: #{$medium-min-val})';
+$large: 'only screen and (min-width: #{$large-min-val})';

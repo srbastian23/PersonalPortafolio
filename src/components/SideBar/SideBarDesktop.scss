@@ -1,0 +1,13 @@
+@import '../../assets/styles/media.scss';
+
+.menu-dekstop {
+	display: none;
+	@media #{$medium} {
+		display: block;
+		height: 100vh;
+	}
+	text-align: center;
+	.menu {
+		background-color: #181818 !important;
+	}
+}
